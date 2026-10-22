@@ -1,0 +1,19 @@
+{
+  "synthetic_only": true,
+  "patients": 5000,
+  "rows": 145000,
+  "observation_interval_hours": 6,
+  "maximum_followup_hours": 168,
+  "target_24h_counts": {
+    "0.0": 124683,
+    "nan": 20250,
+    "1.0": 67
+  },
+  "target_24_48h_counts": {
+    "0.0": 104698,
+    "nan": 40243,
+    "1.0": 59
+  },
+  "warning": "Synthetic simulated data only. Not clinically validated. Do not use for diagnosis, treatment, or clinical performance claims.",
+  "leakage_warning": "Exclude patient_id, timestamp, aki_onset_timestamp_hours, followup_until_hours and both targets from model features. Split train/validation/test by patient_id, never by row."
+}

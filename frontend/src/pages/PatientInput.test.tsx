@@ -1,0 +1,3 @@
+import {describe,it,expect,vi} from 'vitest';import {render,screen,fireEvent,waitFor} from '@testing-library/react';import PatientInput from './PatientInput'
+vi.mock('../api/client',()=>({predict:vi.fn().mockResolvedValue({risk_probability:.24,risk_level:'LOW',threshold:.35,model_name:'Logistic Regression',prediction_timestamp:'2026-10-22T00:00:00Z',dataset_mode:'synthetic_demo',warnings:['Synthetic demo model; not clinically validated.']})}))
+describe('PatientInput',()=>{it('submits and renders a prediction',async()=>{render(<PatientInput/>);expect(screen.getByLabelText(/Age/)).toBeInTheDocument();fireEvent.click(screen.getByRole('button',{name:/Generate research prediction/i}));await waitFor(()=>expect(screen.getByText('24.0%')).toBeInTheDocument())})})

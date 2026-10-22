@@ -1,0 +1,1 @@
+From root, install `backend/requirements.txt`, then run `python -m backend.app.ml.train --demo` and `uvicorn backend.app.main:app --reload --port 8000`. API docs are at `/docs`. Use synthetic mode only to test the software pipeline.

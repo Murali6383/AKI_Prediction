@@ -1,0 +1,1 @@
+export default function MetricCard({label,value,note}:{label:string;value:string;note?:string}){return <div className="card"><p className="text-sm text-slate-500">{label}</p><p className="mt-2 text-2xl font-bold text-navy">{value}</p>{note&&<p className="mt-1 text-xs text-slate-500">{note}</p>}</div>}

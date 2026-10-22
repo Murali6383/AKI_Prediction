@@ -1,0 +1,15 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+pydantic>=2.8,<3
+pandas>=2.2,<3
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+joblib>=1.4,<2
+shap>=0.46,<1
+xgboost>=2.1,<4
+lightgbm>=4.5,<5
+python-multipart>=0.0.9
+pytest>=8
+httpx>=0.27
+catboost>=1.2.8,<2
+# Optional temporal benchmark: install a PyTorch build matching your CPU/CUDA environment separately.

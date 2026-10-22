@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+dist/
+.env*
+backend/models/*
+!backend/models/.gitkeep
+backend/reports/*
+!backend/reports/.gitkeep
+backend/data/*
+!backend/data/.gitkeep

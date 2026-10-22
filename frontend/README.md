@@ -1,0 +1,1 @@
+Run `npm install`, `npm run dev`; default API URL is `http://127.0.0.1:8000`. Optional `.env.local`: `VITE_API_URL=http://127.0.0.1:8000` (never place secrets in frontend variables). Run `npm run test` and `npm run build`.
